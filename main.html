@@ -10,11 +10,13 @@
 <body>
 	<h4>Job App Form</h4>
 	<div>
-	<label for="name"*>Name:</label><br>
-	<input type="text" id="name" name="name"> <br> 
+		<form id="my-form" method="post">
+
+	<label for="name">Name:</label><br>
+	<input type="text" id="#name" name="name" required> <br> 
 
 	<label for="Email-id"*>Email-id:</label><br>
-	<input type="email" id="email" name="email"> <br> 
+	<input type="email" id="#email" name="email" required> <br> 
 
     <span>Gender type :</span><br>
 	<label for="radio">Male </label>
@@ -26,28 +28,29 @@
 
 	<label for="laptop">Choose a Laptop:</label><br>
 
-<select name="laptop" id="laptop">
+<select name="laptop" id="#laptop" required>
   <option value="Apple">Apple</option>
   <option value="Asus">Asus</option>
   <option value="HP">HP</option>
 </select>
 <br>
-	 <label for="age"*>Age:</label><br>
-	 <input type="number" id="age" name="age"> <br> 
+	 <label for="age">Age:</label><br>
+	 <input type="number" id="#age" name="age" required> <br> 
 
-	 <label for="DOB"*>Date of birth:</label><br>
-	 <input type="date" id="DOB" name="DOB"> <br> 
+	 <label for="dob">Date of birth:</label><br>
+	 <input type="date" id="dob" name="dob" required> <br> 
 
 	 <label type="Password"*>Enter password:</label><br>
-	 <input type="password" id="password" name="password"> <br> 
+	 <input type="password" id="#password" name="password" required> <br> 
 	
 	<label for="portpolio">Add your portpolio website:</label><br>
-<input type="url" id="portpolio" name="portpolio">
+<input type="url" id="#portpolio" name="portpolio">
 <br> <br> 
-<div class="btn">
-<button>Submit</button> 
+<div id="btn">
+<button type="submit">Submit</button> 
 </div>
 </div>
+</form>
 
     <script type="text/javascript" src="./script.js">
 </script>
@@ -55,4 +58,3 @@
 </body>
 
 </html>
-
